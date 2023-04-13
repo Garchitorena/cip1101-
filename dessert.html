@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Photo Gallery of Food</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar=default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand"><b>Photo Gallery of Food</b></div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="appetizers.html">APPETIZERS</a>
+                    </li>
+
+                    <li>
+                        <a href="maincourse.html">MAIN COURSE</a>
+                    </li>
+
+                    <li>
+                        <a href="dessert.html">DESSERT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page-header">
+            <center>
+                <h2><b>Dessert</b></h2>
+            </center>
+        </div>
+
+        <div class="row">
+            <center>
+                <button type="button" class="collapsible">
+                    <img src="images/tiramisu.jpg">
+                </button>
+                <div class="content">
+                    <h6>Tiramisu</h6>
+                    <p>
+                        An Italian original recipe. It is made of ladyfingers dipped in coffee, 
+                        layered with a whipped mixture of eggs, sugar, and mascarpone cheese, flavoured with cocoa
+                    </p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <img src="images/halohalo.jpg">
+                </button>
+                <div class="content">
+                    <h6>Halo-halo</h6>
+                    <p>
+                        Made of crushed ice, evaporated milk, and ube halaya, garbanzo beans, coconut strips, sago, gulaman, pinipig, soft yams, flan, slices of fruits. 
+                        Topped with an ube ice cream
+                    </p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <img src="images/cheescake.jpg">
+                </button>
+                <div class="content">
+                    <h6>Caesar Salad Roast Chicken</h6>
+                    <p>
+                        A mixture of a soft, fresh cheese , eggs, and sugar with a bottom layer of crushed cookies, graham crackers, and pastry.
+                    </p>
+                </div>
+            </center>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i=0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                    var content= this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    }
+                    else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

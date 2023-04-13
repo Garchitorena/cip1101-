@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Photo Gallery of Food</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar=default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand"><b>Photo Gallery of Food</b></div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="appetizers.html">APPETIZERS</a>
+                    </li>
+
+                    <li>
+                        <a href="maincourse.html">MAIN COURSE</a>
+                    </li>
+
+                    <li>
+                        <a href="dessert.html">DESSERT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page-header">
+            <center>
+                <h2><b>Appetizers</b></h2>
+            </center>
+        </div>
+
+        <div class="row">
+            <center>
+                <button type="button" class="collapsible">
+                    <img src="images/eggandbaconcanape.jpg">
+                </button>
+                <div class="content">
+                    <h6>Egg and Bacon Canape</h6>
+                    <p>
+                        These small sandwiches with cream cheese, bacon, and quail egg look beautiful 
+                        on the holiday table and serve as a great snack.
+                    </p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <img src="images/hamandcheesestacks.jpg">
+                </button>
+                <div class="content">
+                    <h6>Ham and Cheese Stacks</h6>
+                    <p>
+                        The savory stack features slices of tender smoky ham and luscious Brie cheese. 
+                        The sweet stack is slathered in marmalade and topped with a dollop of whipped cream.
+                    </p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <img src="images/friedprosciuttotortellini.jpg">
+                </button>
+                <div class="content">
+                    <h6>Fried Prosciutto Tortellini</h6>
+                    <p>
+                        Fried Prosciutto Tortellini is the perfect party appetizer recipe. 
+                        Bites of crispy, crunchy pasta filled with cheese and even better when dipped in classic marinara.
+                    </p>
+                </div>
+            </center>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i=0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                    var content= this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    }
+                    else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background-image: linear-gradient(90deg, rgba(38,185,3,1) 0%, rgba(236,237,14,1) 42%, rgba(0,255,248,1) 100%);
+    width: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #d9f4fe;
+    padding: 5px;
+    width: 100%;
+}
+
+.navbar-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding-top: 28px;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: bisque;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.page-header ,.row {
+    padding-top: 15px;
+}
+
+.page-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-justify: distribute;
+}
+
+.collapsible {
+    background-color: black;
+    color: azure;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 250px;
+    border: none;
+    float: none;
+}
+
+.active, .collapsible:hover {
+    background-color: azure;
+}
+  
+.content {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: azure;
+}
+
+img {
+    width: 225px;
+    height: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    li{
+        float: none;
+    }
+}
